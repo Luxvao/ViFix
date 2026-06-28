@@ -3,7 +3,7 @@
   "LoaderOrder": 1,
   "Title": "ViFix",
   "Description": "Fixes UI movement key conflicts on specific screens.",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Author": "Luxvao",
   "PreviewImage": "vifix_icon.png",
   "Tags": [ "Bugfix", "Vi", "Hjkl" ],

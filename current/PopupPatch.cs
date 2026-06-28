@@ -7,9 +7,11 @@ namespace ViFix.HarmonyPatches
 	class PopupPatch {
 		[HarmonyPrefix]
 		[HarmonyPatch("PickOption")]
-		static void Prefix(ref IReadOnlyList<string> Options, ref IReadOnlyList<char> Hotkeys, ref string PopupID) {
-			var hotkeyResolver = new HotkeyResolver();
-			Hotkeys = hotkeyResolver.resolve(Hotkeys);
+		static void Prefix(ref IReadOnlyList<char> Hotkeys) {
+			if (Hotkeys is not null) {
+				var hotkeyResolver = new HotkeyResolver();
+				Hotkeys = hotkeyResolver.resolve(Hotkeys);
+			}
 		}
 	}
 }

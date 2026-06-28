@@ -1,0 +1,8 @@
+{
+  "WorkshopId": 3749392476,
+  "Title": "ViFix",
+  "Description": "Fixes UI movement key conflicts on specific screens.\nGithub: https://github.com/Luxvao/ViFix/",
+  "Tags": "Bugfix,VI,HJKL",
+  "Visibility": "2",
+  "ImagePath": "vifix_icon.png"
+}

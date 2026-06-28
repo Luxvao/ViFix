@@ -40,9 +40,9 @@ public class HotkeyResolver {
 	}
 
 	private void shiftDown(char Hotkey, int Idx) {
-		if (Hotkey == 'z') return;
-
 		while (HotkeyConflicts.Contains(++Hotkey)) {}
+
+		if (Hotkey > 'z') return;
 
 		int idx_next;
 
